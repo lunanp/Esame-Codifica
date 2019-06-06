@@ -1,0 +1,236 @@
+body{
+  background-color: #d8bfd8;
+}
+
+
+h1{
+  font-family: "Pattaya";
+  color: #4682B4;
+  font-size: 4em;
+  text-align: center;
+  margin-top: 1%;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h2{
+	font-family:'Nunito', sans-serif;
+	color: #800080;
+	font-size: 1em;
+}
+
+h3{
+	font-family:'Nunito', sans-serif;
+	color:#FFFFFF;
+	font-size: 1em;
+}
+
+h4{
+	margin-left:3%;
+	font-family:'Nunito', sans-serif;
+	color: #c6538c;
+	font-size: 1.5em;
+}
+h5{
+	font-family:'Nunito', sans-serif;
+	color: #c6538c;
+	font-size: 1.5em;
+}
+
+section{
+	margin-bottom: 20px;
+}
+
+
+section p{
+	font-weight: bold;
+	font-size: large;
+	background-color: #ffffff;
+	color: #a22e00;
+}
+section p{
+	font-weight: bold;
+	font-size: large;
+	background-color: #ffffff;
+	color: #a22e00;
+	margin: 30px;
+	line-height: 30px;
+}
+
+
+
+p{
+	font-family: "Nunito";
+	font-size: 1em;
+	color: #000000;
+	margin-top:4%;
+}
+
+footer{
+  background-color:#4682B4;
+  margin-top: 2%;
+  background-attachment: fixed;
+}
+
+a{
+  text-decoration-line: none;
+  font-size: 2em;
+  color: #FFFFFF;
+  padding: 3%;
+}
+
+a:hover{
+  color: #000000;
+}
+
+a:active{
+  color:#9F000F ;
+}
+
+img[alt="croce"]{
+  width: 38px;
+  position: inherit;
+}
+
+.close{
+    width: 38px;
+    height: 38px;
+}
+
+
+#button{
+  margin-top: 6%;
+  margin-left: 10%;
+}
+
+
+/* Finestra modale */
+
+.myModal {
+  display: none; /* Hidden by default */
+  z-index: 1; /* Sit on top */
+  margin-left:10%;
+  margin-right:10%;
+  top: 0;
+  height: auto; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: #d8bfd8; /* Black w/ opacity */
+  border-style: double;
+  border-width: 5px;
+  border-color: #4682B4;
+}
+
+
+/* Pulsante di chiusura  */
+.close {
+  color: #993366;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+
+#contenitoreImmagineModaleCartolina10,#contenitoreImmagineModaleCartolina5,#contenitoreImmagineModaleCartolina27{
+
+    /* position: fixed; */
+    display: inline-block;
+    top: 0;
+    margin-right:10px;
+    padding-left: 3%;
+}
+
+
+
+#contenitoreTestoModaleCartolina10{
+  padding-bottom: 4%;
+  display: inline-block;
+}
+
+#contenitoreTestoModaleCartolina5,#contenitoreTestoModaleCartolina27{
+  padding-bottom: 12%;
+  margin-right: 15%;
+  display: inline-block;
+
+}
+
+td{
+  font-family: "Nunito";
+  font-size: 1em;
+  color: #000000;
+  margin-top:4%;
+}
+
+/* INFORMAZIONI A SCOMPARSA */
+.flip,.panel{
+  padding: 5px;
+  text-align: center;
+  background-color: #d8bfd8;
+  border: dashed 1px #993366;
+}
+
+#flip10{
+  cursor: pointer;
+}
+
+#flip5{
+  cursor: pointer;
+}
+.flip{
+	color: #bf4080;
+}
+
+#flip27{
+  cursor: pointer;
+}
+
+.panel{
+  display: none;
+}
+
+li{
+	list-style-type: none;
+	font-family: "Nunito";
+	font-size: 1em;
+	color: #000000;
+	margin-top:4%;
+	text-align: center;
+}
+
+#croce{
+  position: relative;
+  margin: 0;
+}
+
+.immagini{
+	height:5em;
+}
+
+
+footer:after{
+  content: "";
+  display: table;
+  clear: both;
+  position: relative;
+}
+
+.sinistra{
+    float:left;
+    display: inline-block;
+    width: 50%;
+    clear: both;
+    padding: 10px;
+}
+
+.luna,.ilaria,.anna {
+  display: inline-block;
+  padding: 20px;
+}
+
+.destra{
+  margin-left: 50%;
+}
+
+.destra p{
+  padding-top: 20px;
+}

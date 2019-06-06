@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style_xsl.xsl"?>
+<!DOCTYPE teiCorpus SYSTEM "schema_esame.dtd">
+
+
+<teiCorpus>
+    <teiHeader xml:id="comune">
+        <fileDesc>
+            <!--contiene le informazioni relative al file-->
+            <titleStmt>
+                <!--figlio obbligatorio: titolo dell'edizione digitale e responsabili-->
+                <!-- TITOLO NB: non corrisponde completamente alla voce TITOLO della tabella perché si tratta del titolo della edizione digitale -->
+                <title type="main"> Corrispondenze durante la <lb/>Prima Guerra Mondiale </title>
+
+                <!-- TRASCRITTORE nome e cognome-->
+                <respStmt>
+                    <resp>Trascritto da:</resp>
+                    <name xml:id="Anna">Anna Conforti</name>
+                    <name xml:id="Ilaria">Ilaria Fantoni</name>
+                    <name xml:id="Luna">Luna Noemi Puccia</name>
+                </respStmt>
+
+                <!-- ENTE DI APPARTENENZA -->
+                <respStmt>
+                    <resp>Ente di Appartenenza:</resp>
+                    <name type="comune" ref="#SP">Comune della Spezia</name>
+                </respStmt>
+
+            </titleStmt>
+
+            <editionStmt>
+                <edition>Studenti di Codifica di Testi, Corso di Laurea in Informatica Umanistica,
+                        <orgName ref="#UNIPI"> Università di Pisa </orgName>
+                    <!-- COMPILAZIONE -->
+                    <date when="2018">2018</date>
+                </edition>
+
+                <!-- NOME COMPILATORE -->
+                <respStmt>
+                    <resp>Codificato da:</resp>
+                    <name xml:id="Castagneto">Tommaso Castagneto</name>
+                </respStmt>
+
+                <!-- REFERENTE SCIENTIFICO sempre Nome Cognome, XY2 è sempre Tommaso Castagneto, XZ1 è chi interviene sulla schedatura già fatta per correzioni e aggiunte-->
+                <respStmt>
+                    <resp>Compilato da:</resp>
+                    <name ref="#Castagneto">Tommaso Castagneto</name>
+                </respStmt>
+
+                <respStmt>
+                    <resp>Responsabile scientifico:</resp>
+                    <name xml:id="GP">Giacomo Paolicchi</name>
+                    <name xml:id="ES">Enrica Salvatori</name>
+                </respStmt>
+
+                <respStmt>
+                    <resp>Funzionario responsabile:</resp>
+                    <name xml:id="ER">E. Ratti</name>
+                </respStmt>
+            </editionStmt>
+
+            <publicationStmt>
+                <!--figlio obbligatorio:  come l'edizione digitale viene pubblicata-->
+                <publisher>
+                    <orgName ref="#UNIPI"> Unipi </orgName>
+                </publisher>
+                <pubPlace>Pisa</pubPlace>
+                <availability>
+                    <p>Disponibile solo con licenza</p>
+                </availability>
+                <date when="2019">2019</date>
+                <distributor>LabCD</distributor>
+                <address>
+                    <addrLine>Laboratorio di Cultura Digitale - <orgName ref="#UNIPI"> Università di
+                            Pisa </orgName></addrLine>
+                    <addrLine>
+                        <placeName> Pisa </placeName>
+                    </addrLine>
+                </address>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--figlio obbligatorio di fileDesc, fornisce informazioni sulla fonte materiale-->
+                <bibl>
+                    <interp> Tre cartoline scritte da Giovanni Coliola (Giovannino) ai membri della
+                        famiglia Turtura, quali Oliva e Antonietta. </interp>
+                </bibl>
+
+                <msDesc>
+                    <msIdentifier>
+                        <country>Italia</country>
+                        <settlement>La Spezia (SP)</settlement>
+                        <!-- COLLOCAZIONE SPECIFICA -->
+                        <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei
+                            cimeli garibaldini e della Prima Guerrra Mondiale</repository>
+                    </msIdentifier>
+
+
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <objectType>Cartolina</objectType>
+                                    <!-- MATERIALI -->
+                                    <material>Carta</material>
+                                    <!-- DIMENSIONE -->
+                                    <dimensions unit="cm">
+                                        <height>14</height>
+                                        <width>9</width>
+                                    </dimensions>
+                                </support>
+                                <condition>Buono</condition>
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc>
+                </msDesc>
+
+                <listOrg>
+                    <org xml:id="UNIPI">
+                        <orgName> Università di <settlement> Pisa </settlement>
+                        </orgName>
+                    </org>
+                </listOrg>
+
+
+
+                <listRelation>
+                    <p>
+                        <interp> Possiamo dire con certezza che la corrispondenza tra Oliva e
+                            Giovanni va dal 1911 al 1918; molto probabilmente erano legati da una
+                            relazione sentimentale profonda quale il matrimonio. Nel "Diario
+                            Ravennate Indicatori - 1933" di Muratori è presente il nome della donna,
+                            indicato come "Oliva Turtura Coliola". Era infatti usanza comune nel
+                            Novecento rivolgersi a una donna sposata con il cognome del marito.
+                            Sicuramente Giovanni aveva un buon rapporto con tutta la famiglia della
+                            moglie: ne è esempio la cartolina numero 27 indirizzata ad Antonietta,
+                            che si suppone fosse la cognata. </interp>
+                        <ptr xml:id="Annuario_del_Ministero_dell_Educazione_n" target="Annuario.pdf"
+                            n="763"/>
+                    </p>
+                </listRelation>
+
+            </sourceDesc>
+        </fileDesc>
+
+
+        <encodingDesc>
+            <!--descrizione della codifica unica per tutte le cartoline-->
+            <charDecl>
+                <desc> La codifica è stata applicata su un testo scritto in italiano con caratteri dell'alfabeto
+                    latino. </desc>
+                <char/>
+                <!--figlio obbligatorio-->
+            </charDecl>
+
+            <projectDesc>
+                <p> Il progetto d'esame vede la codifica di 3 cartoline della Grande Guerra conservate nel Museo Civico Etnografico di La Spezia.
+                    Abbiamo ricavato le informazioni dalle cartoline stesse, e da altri siti web che abbiamo ritenuto affidabili.
+                </p>
+            </projectDesc>
+
+            <editorialDecl>
+
+                <p> Linee vuote e ritorni a capo mantenuti</p>
+                <p> Lettere maiuscole/minuscole e punteggiatura
+                    mantenuti</p>
+
+            </editorialDecl>
+
+        </encodingDesc>
+
+    </teiHeader>
+
+    <xi:include href="cartolina5.xml"/>   
+    <xi:include href="cartolina10.xml"/>
+    <xi:include href="cartolina27.xml"/>
+
+</teiCorpus>
